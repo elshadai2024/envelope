@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --bg-url: url("./img/bg-mobile.png");
+}
+
+body {
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  margin: 12px 15px;
+}
+body * {
+  font-family: "Blinker", sans-serif;
+}
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(58, 107, 193, 1);
+}
+small,
+span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: black;
+}
+#container {
+  background-color: white;
+  height: 100vh;
+  opacity: 85%;
+}
+#logo {
+  text-align: center;
+}
+#logo img {
+  width: 100px;
+}
+.container-dados {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  gap: 5px;
+}
+input {
+  height: 34px;
+  background: #d9d9d9;
+  opacity: 0.6;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.container-nome {
+  display: flex;
+  flex-direction: column;
+}
+.container-tel {
+  display: flex;
+  flex-direction: column;
+}
+.remuneracao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.remuneracao label {
+  color: rgba(58, 107, 193, 1);
+  text-align: center;
+}
+.remuneracao input {
+  width: 50%;
+  height: 30px;
+  text-align: center;
+}
+#tribultos ul li {
+  display: flex;
+  flex-direction: column;
+
+  margin: 14px;
+  gap: 5px;
+}
+
+#tribultos input {
+  height: 20px;
+  width: 30%;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  transform: rotate(179.62deg);
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+}
+.total label {
+  color: rgba(58, 107, 193, 1);
+  text-align: center;
+}
+.total input {
+  width: 50%;
+  height: 30px;
+  text-align: center;
+}
