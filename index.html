@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;700&family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
@@ -20,62 +20,81 @@
           src="./img/logo.png"
           alt="Globo do mundo com duas mão segurando uma bíblia"
         />
+        <h1>
+          MINISTÉRIO PENTECOSTAL
+          <br />
+          PALAVRA DE VIDA
+        </h1>
       </div>
       <div class="container-dados">
-        <div class="container-nome">
-          <label>Nome:</label>
-          <input type="text" />
-        </div>
-        <div class="container-tel">
-          <label>Telefone:</label>
-          <input
-            name="telefone"
-            id="telefone"
-            type="tel"
-            placeholder="Ex.: (61) 91234-1234"
-          />
-        </div>
-        <div class="remuneracao">
-          <label for=""> Remuneração Mensal </label>
-          <input type="number" />
+        <div class="container-trib">
+          <div class="container-trib2">
+            <div class="container-nome">
+              <label>Nome:</label>
+              <input type="text" />
+            </div>
+            <div class="container-tel">
+              <label>Telefone:</label>
+              <input
+                name="telefone"
+                id="telefone"
+                type="tel"
+                placeholder="Ex.: (61) 91234-1234"
+              />
+            </div>
+          </div>
+          <div class="remuneracao">
+            <label for=""> Remuneração Mensal </label>
+            <input type="number" />
+          </div>
         </div>
       </div>
       <div id="tribultos">
         <ul>
           <li>
             <h2>Primícia(1/30)</h2>
-            <small
-              >lv 23.10 / EZ 44.30 / Ne 10.37/ NM 10.12-19 / Dt 18.1-4
+            <div class="trib-pc">
+              <small
+                >lv 23.10 / EZ 44.30 / Ne 10.37/ NM 10.12-19 / Dt 18.1-4
+                <br />
+                Dt 26.1-4/ Cr 31.4-11 / Pv 3.9-10 / Rm 11.16 / Hb 11.14</small
+              >
               <br />
-              Dt 26.1-4/ Cr 31.4-11 / Pv 3.9-10 / Rm 11.16 / Hb 11.14</small
-            >
-            <input type="number" />
+              <input type="number" />
+            </div>
             <div class="line"></div>
           </li>
           <li>
             <h2>Dízimo (10%)</h2>
-            <small
-              >Lv27.32-34 / Dt26.12-15 / Ne 10.37 / 2 Cr 31.4-12
+            <div class="trib-pc">
+              <small
+                >Lv27.32-34 / Dt26.12-15 / Ne 10.37 / 2 Cr 31.4-12
+                <br />
+                Ml 3.6-10 / Mt 23.23-24 / Hb 7.1-10 /Sl 96.7-9</small
+              >
               <br />
-              Ml 3.6-10 / Mt 23.23-24 / Hb 7.1-10 /Sl 96.7-9</small
-            >
-            <input type="number" />
+              <input type="number" />
+            </div>
             <div class="line"></div>
           </li>
           <li>
             <h2>Oferta de Gratidão <span>(Voluntária com Proposíto)</span></h2>
-            <small
-              >Ex 25.2-3 / Ex 34.20 / Ex 23.15 / Jz 6.15-18
+            <div class="trib-pc">
+              <small
+                >Ex 25.2-3 / Ex 34.20 / Ex 23.15 / Jz 6.15-18
+                <br />
+                1 Cr 21.21-26 / 2 Cr 9.7/ Lc 2.21-24 / Rm 13.1-7</small
+              >
               <br />
-              1 Cr 21.21-26 / 2 Cr 9.7/ Lc 2.21-24 / Rm 13.1-7</small
-            >
-            <input type="number" />
+              <input type="number" />
+            </div>
             <div class="line"></div>
           </li>
         </ul>
       </div>
       <div class="total">
         <label for=""> Total de Contribuição </label>
+
         <input type="number" />
       </div>
     </div>

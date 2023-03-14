@@ -20,6 +20,9 @@ body {
 body * {
   font-family: "Blinker", sans-serif;
 }
+h1 {
+  display: none;
+}
 h2 {
   font-weight: 700;
   font-size: 20px;
@@ -87,14 +90,13 @@ input {
   text-align: center;
 }
 .remuneracao input {
-  width: 50%;
+  width: 200px;
   height: 30px;
   text-align: center;
 }
 #tribultos ul li {
   display: flex;
   flex-direction: column;
-
   margin: 14px;
   gap: 5px;
 }
@@ -114,13 +116,108 @@ input {
   flex-direction: column;
   align-items: center;
   font-weight: 700;
+  padding: 0px 0px 15px;
 }
 .total label {
   color: rgba(58, 107, 193, 1);
   text-align: center;
 }
 .total input {
-  width: 50%;
+  width: 200px;
   height: 30px;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url("./img/bg.png");
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  #container {
+    background-color: white;
+    /* margin-top: 50px; */
+    width: 100%;
+    max-width: 900px;
+    /* height: 100%; */
+    min-height: 550px;
+  }
+  h1 {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  #logo img {
+    width: 100px;
+  }
+  #logo {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .container-dados input {
+    width: 50%;
+    height: 20px;
+  }
+  .container-nome {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+  }
+  .container-tel {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    max-width: 250px;
+    align-items: center;
+  }
+  .container-trib {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  .container-trib2 {
+    width: 50%;
+  }
+  .container-trib2 input {
+    width: 100%;
+  }
+  .remuneracao input {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+  }
+
+  .trib-pc {
+    display: flex;
+    justify-content: space-between;
+  }
+  #tribultos ul {
+    padding: 0px 40px;
+  }
+
+  #tribultos input {
+    height: 20px;
+    width: 100px;
+  }
+  .total {
+    align-items: flex-end;
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .total input {
+    width: 150px;
+    height: 30px;
+    margin-right: 10px;
+  }
 }
