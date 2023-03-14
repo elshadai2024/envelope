@@ -80,6 +80,7 @@ input {
   display: flex;
   flex-direction: column;
 }
+
 .remuneracao {
   display: flex;
   flex-direction: column;
@@ -87,7 +88,6 @@ input {
 }
 .remuneracao label {
   color: rgba(58, 107, 193, 1);
-  text-align: center;
 }
 .remuneracao input {
   width: 200px;
@@ -196,6 +196,11 @@ input {
     width: 150px;
     height: 30px;
     text-align: center;
+  }
+
+  .eye {
+    width: 10%;
+    padding: 0px 40px;
   }
 
   .trib-pc {

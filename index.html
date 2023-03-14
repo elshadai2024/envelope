@@ -10,8 +10,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
-    <title>MINISTÉRIO PENTECOSTAL PALAVRA DE VIDA</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./js/telefone.js" defer></script>
+    <script src="./js/calculo-tribultos.js" defer></script>
+    <title>MINISTÉRIO PENTECOSTAL PALAVRA DE VIDA</title>
   </head>
   <body>
     <div id="container">
@@ -45,7 +47,13 @@
           </div>
           <div class="remuneracao">
             <label for=""> Remuneração Mensal </label>
-            <input type="number" />
+
+            <input
+              id="remuneracao"
+              onkeyup="calcula()"
+              class="input-trib"
+              type="text"
+            />
           </div>
         </div>
       </div>
@@ -60,7 +68,7 @@
                 Dt 26.1-4/ Cr 31.4-11 / Pv 3.9-10 / Rm 11.16 / Hb 11.14</small
               >
               <br />
-              <input type="number" />
+              <input type="text" id="primicia" />
             </div>
             <div class="line"></div>
           </li>
@@ -73,7 +81,7 @@
                 Ml 3.6-10 / Mt 23.23-24 / Hb 7.1-10 /Sl 96.7-9</small
               >
               <br />
-              <input type="number" />
+              <input type="text" id="dizimo" />
             </div>
             <div class="line"></div>
           </li>
@@ -86,7 +94,12 @@
                 1 Cr 21.21-26 / 2 Cr 9.7/ Lc 2.21-24 / Rm 13.1-7</small
               >
               <br />
-              <input type="number" />
+              <input
+                id="oferta_gratidao"
+                class="tributos-velue icon"
+                type="text"
+                text
+              />
             </div>
             <div class="line"></div>
           </li>
@@ -95,7 +108,7 @@
       <div class="total">
         <label for=""> Total de Contribuição </label>
 
-        <input type="number" />
+        <input type="text" id="total" />
       </div>
     </div>
   </body>
