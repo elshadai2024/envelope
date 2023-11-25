@@ -159,17 +159,17 @@ function calcula() {
     "."
   );
 
-  // document.getElementById("semeadura").value = number_format(
-  //   Math.ceil(
-  //     parseFloat(
-  //       valorCalculavel(document.getElementById("remuneracao").value)
-  //     ) *
-  //       (0.4 / 100)
-  //   ),
-  //   2,
-  //   ",",
-  //   "."
-  // );
+  document.getElementById("semeadura").value = number_format(
+    Math.ceil(
+      parseFloat(
+        valorCalculavel(document.getElementById("remuneracao").value)
+      ) *
+        (0.4 / 100)
+    ),
+    2,
+    ",",
+    "."
+  );
 
   // document.getElementById("oferta_israel").value = number_format(
   //   Math.ceil(
